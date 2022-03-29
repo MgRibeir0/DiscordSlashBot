@@ -6,9 +6,13 @@ Just clone and change the credentials at [configs.json](https://github.com/MgRib
 
 All your commands need to be created inside the commands folder.
 
+To install needed dependencies, just run `npm i` on the root folder.
+
 ## Guild commands and Global commands
 
 In the [dc.js](https://github.com/MgRibeir0/DiscordSlashBot/blob/master/dc.js) file, we have the following code:
+
+</br>
 
 <code>
   rest.put(Routes.applicationGuildCommands(clientID, guildID), { body: commands })
@@ -16,8 +20,12 @@ In the [dc.js](https://github.com/MgRibeir0/DiscordSlashBot/blob/master/dc.js) f
     .catch(console.error);
 </code>
 
+</br>
+
 This sends a request to the Discord API and register your commands to a guild.
 To make it global, you just need to change to this
+
+</br>
 
 <code>
   rest.put(Routes.applicationCommands(clientID), { body: commands })
@@ -25,6 +33,8 @@ To make it global, you just need to change to this
     .catch(console.error);
 </code>
 
+</br>
+
 Ps: All the Date objects are fully optional, i use them to better control execution time and delay between things.
 
-To install needed dependencies, just run `npm i` on the root folder.
+</br>
