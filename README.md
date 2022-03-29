@@ -21,6 +21,7 @@ In the [dc.js](https://github.com/MgRibeir0/DiscordSlashBot/blob/master/dc.js) f
 </code>
 
 </br>
+</br>
 
 This sends a request to the Discord API and register your commands to a guild.
 To make it global, you just need to change to this
@@ -33,6 +34,7 @@ To make it global, you just need to change to this
     .catch(console.error);
 </code>
 
+</br>
 </br>
 
 Ps: All the Date objects are fully optional, i use them to better control execution time and delay between things.
